@@ -1,0 +1,23 @@
+.heading{
+    display: flex;
+    /* border: 5px solid black; */
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 40px;
+}
+.image_div{
+    height: 70px;
+    width: 100px;
+}
+.image{
+    height: 100%;
+    width: 100%;
+}
+.filter_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
