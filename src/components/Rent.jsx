@@ -1,4 +1,5 @@
 import React from "react";
+import Property from "./Property";
 import styles from "./RentStyle.module.css";
 
 const Rent = () => {
@@ -19,37 +20,41 @@ const Rent = () => {
     </div>
         {/* filter buttons */}
         <div className={styles.filter_div}>
-            <div>
+            <div className={styles.filter_name}>
                 <p>Location</p>
-                <select value="">
+                <select>
                     <option value="Belgaum,India">Belgaum,India</option>
                     <option value="Banglore,India">Banglore,India</option>
                     <option value="Mumbai,India">Mumbai,India</option>
                     <option value="Goa,India">Goa,India</option>
                 </select>
             </div>
-            <div>
+            <div className={styles.filter_name}>
                 <p>When</p>
-                <select>
-
-                </select>
+                <input type="date"/>
+                
             </div>
-            <div>
+            <div className={styles.filter_name}>
             <p>Price</p>
                 <select>
-                    <option value="">₹500-₹2500</option>
-                    <option value="">₹3000-₹8000</option>
-                    <option value="">₹10000-₹12000</option>
-                    <option value="">₹12000-₹18000</option>
+                    <option value="₹5000-₹10000">₹5000-₹10000</option>
+                    <option value="₹10000-₹15000">₹10000-₹15000</option>
+                    <option value="₹15000-₹25000">₹15000-₹25000</option>
                 </select>
             </div>
-            <div>
+            <div className={styles.filter_name}>
             <p>Property Type</p>
                 <select>
                     <option value="Houses">Houses</option>
                     <option value="Apartements">Apartements</option>
                 </select>
             </div>
+            <div>
+              <button className={styles.search_button}>Search</button>
+            </div>
+        </div>
+        <div className={styles.property_div}>
+          <Property/>
         </div>
     </div>
   );
