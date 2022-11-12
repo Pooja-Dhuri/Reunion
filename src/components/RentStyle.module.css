@@ -1,10 +1,9 @@
-*{
-    background-color: rgb(238, 233, 233);
-}
+
 .heading{
     display: flex;
     /* border: 5px solid black; */
     height: 40px;
+    color: wheat;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -18,17 +17,17 @@
     height: 100%;
     width: 100%;
 }
-.filter_div{
+.filter_div>form{
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
     background-color: white;
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 20px;
 }
-.filter_div>div>select{
+.filter_div>form>div>select,.filter_div>form>div>div>select{
     height: 40px;
     width: 150px;
     border: 0px;
@@ -36,13 +35,16 @@
     font-size: 20px;
     border-radius: 5px;
 }
-.filter_div>div>input{
+.min_max_div{
+    border-radius: 5px;
+}
+.filter_div>form>div>input{
     height: 40px;
     width: 150px;
     border: 0px;
     font-size: 20px;
     border-radius: 5px;
-    background-color:rgb(240, 231, 231);
+    /* background-color:rgb(240, 231, 231); */
 }
 .search_button{
     height: 50px;
@@ -55,13 +57,19 @@
     font-size: 20px;
 }
 .filter_name ,.filter_name>p{
-    background-color: white;
+    /* background-color: white; */
     font-size: 20px;
     padding-bottom: 0px;
 }
 .property_div{
     margin: 40px;
-    border: 1px solid black;
-    background-color: white;
+    /* border: 2px dotted black; */
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 60px;
+    padding: 50px;
+    margin-top: 100px;
 }
 
